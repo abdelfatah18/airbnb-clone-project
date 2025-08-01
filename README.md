@@ -199,3 +199,46 @@ The application offers a user-friendly, responsive UI across devices using moder
 ### 8. **Admin Dashboard (Optional if implemented)**
 Admins can manage users, listings, bookings, and view platform statistics, enabling easier moderation and platform oversight.
 
+
+
+
+## API Security
+
+Securing the backend API is critical to protecting user data, preventing abuse, and ensuring the platform's integrity. This project applies several key security practices:
+
+### 1. **Authentication**
+Only registered users can access protected resources. We use secure methods like token-based authentication (e.g., JWT or session tokens) to verify identities and prevent unauthorized access.
+
+### 2. **Authorization**
+Role-based access control ensures that only authorized users can perform certain actions (e.g., only hosts can create properties, only guests can book). This prevents privilege escalation.
+
+### 3. **Rate Limiting**
+To prevent brute-force attacks and abuse of APIs, rate limits are implemented using tools like Django Ratelimit or middleware to restrict excessive requests.
+
+### 4. **Input Validation and Sanitization**
+All user input is validated to prevent SQL injection, XSS, and other injection attacks. The use of Django’s ORM also protects against raw SQL vulnerabilities.
+
+### 5. **Secure Payment Handling**
+Payment-related APIs are encrypted and integrated with third-party providers (e.g., Stripe or PayPal) to ensure safe handling of sensitive financial data.
+
+### 6. **HTTPS Enforcement**
+All API communications occur over HTTPS to encrypt data in transit and protect against man-in-the-middle attacks.
+
+
+
+## CI/CD Pipeline
+
+CI/CD (Continuous Integration and Continuous Deployment) automates the process of testing, building, and deploying code, ensuring rapid and reliable development workflows.
+
+### Why CI/CD Matters:
+- Automatically tests code on every push to catch bugs early.
+- Speeds up deployment and reduces human error.
+- Maintains code quality and consistency across environments.
+
+### Tools Used:
+- **GitHub Actions**: For automating tests, linting, and deployment steps on every push or pull request.
+- **Docker**: Ensures consistent runtime environments across development, testing, and production.
+- **Heroku / Render / AWS / Vercel (Optional)**: Platforms for automated deployment pipelines.
+
+A properly configured CI/CD pipeline helps the team deploy updates quickly and safely while focusing on writing quality code.
+
