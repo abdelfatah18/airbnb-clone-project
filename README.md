@@ -171,3 +171,31 @@ Represents transaction details for bookings.
 - One **User** can leave many **Reviews** for different **Properties**.
 
 
+## Feature Breakdown
+
+This project replicates key functionalities of the Airbnb platform. Below are the main features that power the user experience and application logic:
+
+### 1. **User Management**
+Users can register, log in, and manage their profiles. The system supports both guests and hosts, with role-based access to different functionalities.
+
+### 2. **Property Management**
+Hosts can list new properties by providing details like title, description, location, price per night, and photos. They can also edit or delete their listings.
+
+### 3. **Booking System**
+Guests can search for available properties based on location and date. They can book properties for specific dates, and the system calculates the total price and prevents double booking.
+
+### 4. **Review and Rating System**
+After a stay, guests can leave a rating and written review for a property. This helps build trust and gives future guests insights into the quality of each listing.
+
+### 5. **Payment Integration**
+Secure payment handling is provided for bookings. The system records payment status, method, and associates each payment with the respective booking.
+
+### 6. **Search and Filtering**
+Users can search for properties by location, date range, price, and other filters to find listings that meet their needs.
+
+### 7. **Responsive User Interface**
+The application offers a user-friendly, responsive UI across devices using modern frontend technologies and frameworks like Bootstrap.
+
+### 8. **Admin Dashboard (Optional if implemented)**
+Admins can manage users, listings, bookings, and view platform statistics, enabling easier moderation and platform oversight.
+
