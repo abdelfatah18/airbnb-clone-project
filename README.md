@@ -43,3 +43,36 @@ Coordinates the team, tracks progress, assigns tasks, and ensures milestones are
 
 ### 6. **Quality Assurance (QA) Engineer**
 Tests the application for bugs and performance issues. Writes test cases and automates test suites to ensure the stability and reliability of the system across updates.
+
+
+## Technology Stack
+
+Below is a list of the core technologies used in this project and their respective roles:
+
+### 1. **Django**
+A high-level Python web framework used for building the backend of the application. It enables rapid development of secure and maintainable web APIs and views.
+
+### 2. **PostgreSQL**
+An open-source, advanced relational database used to store application data such as users, listings, bookings, and payments. It integrates well with Django using the ORM.
+
+### 3. **HTML/CSS**
+Used to create and style the frontend pages. HTML structures the content while CSS makes it visually appealing and responsive.
+
+### 4. **JavaScript**
+Adds interactivity to the frontend (e.g., date pickers, form validation, dynamic content loading).
+
+### 5. **Bootstrap**
+A frontend framework used to speed up UI development with pre-designed responsive components.
+
+### 6. **REST Framework (Django REST Framework)**
+Used to create RESTful APIs for the backend. Allows data exchange between frontend and backend in JSON format.
+
+### 7. **Docker** *(Optional if used)*
+Used to containerize the application for easy deployment and environment consistency.
+
+### 8. **Git & GitHub**
+Version control system and platform for code collaboration and project tracking.
+
+---
+
+This tech stack provides a solid foundation for building a scalable and maintainable Airbnb-like platform.
